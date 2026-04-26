@@ -1,0 +1,117 @@
+
+## All about what is pandas and numpy
+### 03-contain Numpy
+### 03.1-contain Pandas
+
+## 1.What is Numpy?
+  > NumPy stands for **Numerical Python**.
+  > It is used for **fast mathematical operations** on array.
+
+## Install NumPy
+
+>pip install numpy
+
+## Import Numpy
+ 
+> import numpy as np
+
+ ## Numpy Arrarys
+ ## Create Numpy Arrays
+
+ >import Numpy as np
+
+# 1D ARRAY
+ arr1=np.array([1,2,3,4,5,6])
+ print(arr1)
+ print(arr1.shape)
+ print(arr1.dtype)
+
+ # 2D ARRAY
+
+ arr2=np.array([1,2,3],
+                [5,6,7])
+ print(arr2.shape)
+
+ # 3D ARRAY
+arr3=np.zeros([3,3,3])
+print(arr3.shape)
+
+### ✅ Special Arrays
+```python
+# Array of zeros
+zeros = np.zeros((3, 3))
+
+# Array of ones
+ones = np.ones((2, 4))
+
+# Array with range
+range_arr = np.arange(0, 10, 2)
+# [0 2 4 6 8]
+
+# Random array
+random_arr = np.random.rand(3, 3)
+
+# Identity matrix
+identity = np.eye(3)
+```
+
+---
+
+##  NumPy Operations
+
+### Arithmetic Operations
+```python
+a = np.array([1, 2, 3])
+b = np.array([4, 5, 6])
+
+print(a + b)    # [5 7 9]
+print(a - b)    # [-3 -3 -3]
+print(a * b)    # [4 10 18]
+print(a / b)    # [0.25 0.4 0.5]
+print(a ** 2)   # [1 4 9]
+```
+
+### Statistical Operations
+```python
+arr = np.array([10, 20, 30, 40, 50])
+
+print(np.mean(arr))    # 30.0
+print(np.median(arr))  # 30.0
+print(np.std(arr))     # 14.14
+print(np.min(arr))     # 10
+print(np.max(arr))     # 50
+print(np.sum(arr))     # 150
+```
+### ✅ Statistical Operations
+```python
+arr = np.array([10, 20, 30, 40, 50])
+
+print(np.mean(arr))    # 30.0
+print(np.median(arr))  # 30.0
+print(np.std(arr))     # 14.14
+print(np.min(arr))     # 10
+print(np.max(arr))     # 50
+print(np.sum(arr))     # 150
+```
+
+### ✅ Array Slicing
+```python
+arr = np.array([10, 20, 30, 40, 50])
+
+print(arr[0])      # 10  (first element)
+print(arr[-1])     # 50  (last element)
+print(arr[1:4])    # [20 30 40]
+print(arr[:3])     # [10 20 30]
+print(arr[::2])    # [10 30 50] (every 2nd)
+```
+
+### ✅ Reshape Array
+```python
+arr = np.arange(1, 13)
+# [ 1  2  3  4  5  6  7  8  9 10 11 12]
+
+reshaped = arr.reshape(3, 4)
+# [[ 1  2  3  4]
+#  [ 5  6  7  8]
+#  [ 9 10 11 12]]
+```
